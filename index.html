@@ -1,0 +1,757 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DMTI | Distributed Merchant Trading Infrastructure</title>
+    <meta name="description" content="A premium infrastructure landing page for DMTI, focused on system trust, layered architecture, and operational discipline.">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <div class="site-grid" aria-hidden="true"></div>
+
+    <header class="topbar">
+      <div class="shell topbar__inner">
+        <a class="brand" href="#hero" aria-label="DMTI home">
+          <span class="brand__mark">DMTI</span>
+          <span class="brand__text">Distributed Merchant Trading Infrastructure</span>
+        </a>
+
+        <nav class="nav" aria-label="Primary">
+          <a href="#hero">Hero</a>
+          <a href="#dashboard">Dashboard</a>
+          <a href="#architecture">Architecture</a>
+          <a href="#features">Features</a>
+          <a href="#status">Status</a>
+          <a href="#roadmap">Roadmap</a>
+          <a href="#principles">Principles</a>
+          <a href="#trust">Trust</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="hero" class="hero section">
+        <div class="hero__backdrop" aria-hidden="true"></div>
+        <div class="shell hero__grid">
+          <div class="hero__copy">
+            <span class="badge badge--accent">Production-grade portfolio system</span>
+            <p class="hero__eyebrow">Distributed Merchant Trading Infrastructure</p>
+            <h1>Infrastructure-first design for a resilient merchant runtime.</h1>
+            <p class="hero__lede">
+              DMTI is presented as a controlled engineering platform: layered, observable, and built around
+              operational trust rather than decorative documentation.
+            </p>
+
+            <div class="hero__actions">
+              <a class="button button--primary" href="#dashboard">Open system dashboard</a>
+              <a class="button button--secondary" href="#principles">Review architecture</a>
+            </div>
+          </div>
+
+          <div class="hero__visual">
+            <div class="panel panel--hero hero-control-plane">
+              <div class="panel__header hero-control-plane__header">
+                <div>
+                  <span class="panel__eyebrow">Control plane</span>
+                  <p class="hero-control-plane__title">Operations dashboard</p>
+                </div>
+                <div class="hero-control-plane__status">
+                  <span class="status-dot status-dot--live">System stable</span>
+                  <span class="hero-control-plane__chip">Review window</span>
+                </div>
+              </div>
+
+              <div class="hero-control-plane__body" aria-hidden="true">
+                <div class="hero-control-plane__kpis">
+                  <article class="hero-kpi">
+                    <span class="hero-kpi__label">Ingress</span>
+                    <strong>Armed</strong>
+                    <div class="hero-kpi__signal"></div>
+                  </article>
+                  <article class="hero-kpi">
+                    <span class="hero-kpi__label">Queue</span>
+                    <strong>Balanced</strong>
+                    <div class="hero-kpi__signal hero-kpi__signal--alt"></div>
+                  </article>
+                  <article class="hero-kpi">
+                    <span class="hero-kpi__label">Replay</span>
+                    <strong>Ready</strong>
+                    <div class="hero-kpi__signal"></div>
+                  </article>
+                  <article class="hero-kpi">
+                    <span class="hero-kpi__label">Recovery</span>
+                    <strong>Hot standby</strong>
+                    <div class="hero-kpi__signal hero-kpi__signal--alt"></div>
+                  </article>
+                </div>
+
+                <div class="hero-control-plane__telemetry">
+                  <div class="hero-control-plane__telemetry-head">
+                    <span>Telemetry stream</span>
+                    <span class="hero-control-plane__telemetry-chip">visual only</span>
+                  </div>
+                  <div class="hero-telemetry" aria-hidden="true">
+                    <div class="hero-telemetry__rail"></div>
+                    <div class="hero-telemetry__event hero-telemetry__event--one">
+                      <span class="hero-telemetry__dot"></span>
+                      <div>
+                        <strong>Ingress parsed</strong>
+                        <p>Route confirmed for control-plane handling.</p>
+                      </div>
+                    </div>
+                    <div class="hero-telemetry__event hero-telemetry__event--two">
+                      <span class="hero-telemetry__dot"></span>
+                      <div>
+                        <strong>State transition</strong>
+                        <p>Working set remains synchronized.</p>
+                      </div>
+                    </div>
+                    <div class="hero-telemetry__event hero-telemetry__event--three">
+                      <span class="hero-telemetry__dot"></span>
+                      <div>
+                        <strong>WAL append</strong>
+                        <p>Write path is staged for replay.</p>
+                      </div>
+                    </div>
+                    <div class="hero-telemetry__pulse hero-telemetry__pulse--one"></div>
+                    <div class="hero-telemetry__pulse hero-telemetry__pulse--two"></div>
+                  </div>
+                </div>
+
+                <div class="hero-control-plane__lower">
+                  <div class="hero-module-stack">
+                    <div class="hero-module-stack__head">
+                      <span>System modules</span>
+                      <span class="hero-control-plane__telemetry-chip">core path</span>
+                    </div>
+                    <div class="hero-module-stack__items">
+                      <article class="hero-module">
+                        <span class="hero-module__index">01</span>
+                        <div>
+                          <strong>State Machine</strong>
+                          <p>Manages explicit state transitions.</p>
+                        </div>
+                      </article>
+                      <article class="hero-module">
+                        <span class="hero-module__index">02</span>
+                        <div>
+                          <strong>WAL</strong>
+                          <p>Captures write intent in order.</p>
+                        </div>
+                      </article>
+                      <article class="hero-module">
+                        <span class="hero-module__index">03</span>
+                        <div>
+                          <strong>Replay Engine</strong>
+                          <p>Rebuilds deterministic sequences.</p>
+                        </div>
+                      </article>
+                      <article class="hero-module">
+                        <span class="hero-module__index">04</span>
+                        <div>
+                          <strong>Recovery Worker</strong>
+                          <p>Rehydrates state after interruption.</p>
+                        </div>
+                      </article>
+                    </div>
+                  </div>
+
+                  <div class="hero-trace">
+                    <div class="hero-trace__head">
+                      <span>Trace flow</span>
+                      <span class="hero-control-plane__telemetry-chip">signal path</span>
+                    </div>
+                    <div class="hero-trace__diagram" aria-label="Telegram to Recovery trace flow">
+                      <span class="hero-trace__node">Telegram</span>
+                      <span class="hero-trace__line"></span>
+                      <span class="hero-trace__node">Router</span>
+                      <span class="hero-trace__line"></span>
+                      <span class="hero-trace__node">State Machine</span>
+                      <span class="hero-trace__line"></span>
+                      <span class="hero-trace__node">WAL</span>
+                      <span class="hero-trace__line"></span>
+                      <span class="hero-trace__node">Outbox</span>
+                      <span class="hero-trace__line"></span>
+                      <span class="hero-trace__node">Replay</span>
+                      <span class="hero-trace__line"></span>
+                      <span class="hero-trace__node">Recovery</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="dashboard" class="section">
+        <div class="shell">
+          <div class="section-heading">
+            <span class="eyebrow">Dashboard mockup</span>
+            <h2>Operational visibility, arranged like an internal control surface.</h2>
+            <p>
+              The dashboard frame is a visual proof point: clean hierarchy, state-first panels, and a compact view
+              of runtime conditions without turning the page into a wall of text.
+            </p>
+          </div>
+
+          <div class="dashboard card-surface">
+            <div class="dashboard__rail">
+              <div class="metric-card">
+                <span class="metric-card__label">Runtime layers</span>
+                <strong>5</strong>
+                <span class="metric-card__note">Transport, application, execution, infrastructure, runtime</span>
+              </div>
+              <div class="metric-card">
+                <span class="metric-card__label">Core aim</span>
+                <strong>Stability</strong>
+                <span class="metric-card__note">Controlled behavior under failure conditions</span>
+              </div>
+              <div class="metric-card">
+                <span class="metric-card__label">State model</span>
+                <strong>Observable</strong>
+                <span class="metric-card__note">Designed for traceable system behavior</span>
+              </div>
+            </div>
+
+            <div class="dashboard__grid">
+              <article class="panel dashboard__panel dashboard__panel--chart">
+                <div class="panel__header">
+                  <span class="panel__eyebrow">Execution signal</span>
+                  <span class="badge badge--quiet">Live window</span>
+                </div>
+
+                <div class="chart" aria-hidden="true">
+                  <div class="chart__grid"></div>
+                  <div class="chart__line chart__line--one"></div>
+                  <div class="chart__line chart__line--two"></div>
+                  <div class="chart__bars">
+                    <span style="height: 34%"></span>
+                    <span style="height: 58%"></span>
+                    <span style="height: 44%"></span>
+                    <span style="height: 72%"></span>
+                    <span style="height: 50%"></span>
+                    <span style="height: 64%"></span>
+                  </div>
+                </div>
+
+                <div class="legend">
+                  <span><i class="legend__swatch legend__swatch--cyan"></i>Validated execution</span>
+                  <span><i class="legend__swatch legend__swatch--ice"></i>Recovery path</span>
+                </div>
+              </article>
+
+              <article class="panel dashboard__panel dashboard__panel--stack">
+                <div class="panel__header">
+                  <span class="panel__eyebrow">System map</span>
+                  <span class="status-dot">Healthy</span>
+                </div>
+
+                <div class="stack-list" role="list" aria-label="Architecture stack">
+                  <div class="stack-item" role="listitem">
+                    <span class="stack-item__index">01</span>
+                    <div>
+                      <strong>Transport layer</strong>
+                      <p>Ingress surface for controlled interaction.</p>
+                    </div>
+                  </div>
+                  <div class="stack-item" role="listitem">
+                    <span class="stack-item__index">02</span>
+                    <div>
+                      <strong>Application layer</strong>
+                      <p>Business logic held behind explicit boundaries.</p>
+                    </div>
+                  </div>
+                  <div class="stack-item" role="listitem">
+                    <span class="stack-item__index">03</span>
+                    <div>
+                      <strong>Infrastructure layer</strong>
+                      <p>Redis, database, and runtime support services.</p>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <article class="panel dashboard__panel dashboard__panel--activity">
+                <div class="panel__header">
+                  <span class="panel__eyebrow">Operational log</span>
+                  <span class="badge">Review ready</span>
+                </div>
+
+                <div class="activity-feed">
+                  <div class="activity-feed__item">
+                    <span class="activity-feed__time">00:01</span>
+                    <div>
+                      <strong>Architecture locked</strong>
+                      <p>Boundaries remain explicit across layers.</p>
+                    </div>
+                  </div>
+                  <div class="activity-feed__item">
+                    <span class="activity-feed__time">00:07</span>
+                    <div>
+                      <strong>Runtime checks passed</strong>
+                      <p>Operational constraints stay visible by design.</p>
+                    </div>
+                  </div>
+                  <div class="activity-feed__item">
+                    <span class="activity-feed__time">00:12</span>
+                    <div>
+                      <strong>Certification in progress</strong>
+                      <p>Portfolio focuses on trust, not feature drift.</p>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="principles" class="section section--principles">
+        <div class="shell">
+          <div class="section-heading">
+            <span class="eyebrow">Core system principles</span>
+            <h2>Architecture philosophy that keeps DMTI modular, recoverable, and execution-ready.</h2>
+            <p>
+              These principles define how the system is structured in practice: clear module boundaries, event-driven
+              execution, durable recovery, full observability, and a production-oriented core.
+            </p>
+          </div>
+
+          <div class="principles-grid principles-grid--core" role="list" aria-label="Core system principles">
+            <article class="principle-card principle-card--core card-surface" role="listitem">
+              <span class="principle-card__index">01</span>
+              <h3>Modular Architecture</h3>
+              <p>DMTI is organized as explicit layers so transport, application, infrastructure, and runtime concerns remain isolated.</p>
+            </article>
+            <article class="principle-card principle-card--core card-surface" role="listitem">
+              <span class="principle-card__index">02</span>
+              <h3>Event-Driven Execution</h3>
+              <p>Changes move through the system as discrete events, keeping control flow traceable and composition-friendly.</p>
+            </article>
+            <article class="principle-card principle-card--core card-surface" role="listitem">
+              <span class="principle-card__index">03</span>
+              <h3>State Recovery Engine</h3>
+              <p>Write-ahead logging, replay, and recovery paths are treated as first-class mechanics rather than add-ons.</p>
+            </article>
+            <article class="principle-card principle-card--core card-surface" role="listitem">
+              <span class="principle-card__index">04</span>
+              <h3>Full Observability Layer</h3>
+              <p>Execution state, module boundaries, and operational surfaces stay visible so the system can be reviewed with confidence.</p>
+            </article>
+            <article class="principle-card principle-card--core card-surface" role="listitem">
+              <span class="principle-card__index">05</span>
+              <h3>Production Execution Core</h3>
+              <p>The runtime is shaped for disciplined execution: controlled paths, durable state, and predictable operational behavior.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="architecture" class="section section--architecture">
+        <div class="shell">
+          <div class="section-heading section-heading--tight">
+            <span class="eyebrow">System architecture</span>
+            <h2>Execution flow stitched across ingress, core processing, and recovery control.</h2>
+            <p>
+              DMTI moves from Telegram ingress through routing, state handling, durable writes, replay, and recovery,
+              with the metrics layer closing the loop for operational visibility.
+            </p>
+          </div>
+
+          <div class="architecture-flow card-surface" aria-label="DMTI execution flow">
+            <div class="architecture-flow__zone architecture-flow__zone--ingress">
+              <div class="architecture-flow__zone-head">
+                <span class="architecture-flow__zone-label">Ingress Layer</span>
+                <span class="architecture-flow__zone-note">Entry and routing</span>
+              </div>
+
+              <div class="architecture-flow__track architecture-flow__track--horizontal">
+                <article class="architecture-node architecture-node--ingress">
+                  <span class="architecture-node__index">01</span>
+                  <div>
+                    <span class="architecture-node__label">Telegram</span>
+                    <p>Inbound surface for command and message intake.</p>
+                  </div>
+                </article>
+                <span class="architecture-flow__connector"></span>
+                <article class="architecture-node architecture-node--ingress">
+                  <span class="architecture-node__index">02</span>
+                  <div>
+                    <span class="architecture-node__label">Router</span>
+                    <p>Directs traffic into the controlled execution path.</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+
+            <div class="architecture-flow__zone architecture-flow__zone--core">
+              <div class="architecture-flow__zone-head">
+                <span class="architecture-flow__zone-label">Execution Core</span>
+                <span class="architecture-flow__zone-note">State and persistence</span>
+              </div>
+
+              <div class="architecture-flow__track architecture-flow__track--horizontal architecture-flow__track--core">
+                <article class="architecture-node architecture-node--core architecture-node--emphasis">
+                  <span class="architecture-node__index">03</span>
+                  <div>
+                    <span class="architecture-node__label">State Machine</span>
+                    <p>Owns transitions and application state.</p>
+                  </div>
+                </article>
+                <span class="architecture-flow__connector"></span>
+                <article class="architecture-node architecture-node--core">
+                  <span class="architecture-node__index">04</span>
+                  <div>
+                    <span class="architecture-node__label">WAL</span>
+                    <p>Captures ordered write intent for durability.</p>
+                  </div>
+                </article>
+                <span class="architecture-flow__connector"></span>
+                <article class="architecture-node architecture-node--core">
+                  <span class="architecture-node__index">05</span>
+                  <div>
+                    <span class="architecture-node__label">Outbox</span>
+                    <p>Buffers outbound work for controlled delivery.</p>
+                  </div>
+                </article>
+                <span class="architecture-flow__connector"></span>
+                <article class="architecture-node architecture-node--core">
+                  <span class="architecture-node__index">06</span>
+                  <div>
+                    <span class="architecture-node__label">Replay Engine</span>
+                    <p>Rebuilds deterministic sequences from stored intent.</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+
+            <div class="architecture-flow__zone architecture-flow__zone--recovery">
+              <div class="architecture-flow__zone-head">
+                <span class="architecture-flow__zone-label">Recovery Layer</span>
+                <span class="architecture-flow__zone-note">Resilience and visibility</span>
+              </div>
+
+              <div class="architecture-flow__track architecture-flow__track--horizontal">
+                <article class="architecture-node architecture-node--recovery">
+                  <span class="architecture-node__index">07</span>
+                  <div>
+                    <span class="architecture-node__label">Recovery Worker</span>
+                    <p>Restores continuity after interruption or reset.</p>
+                  </div>
+                </article>
+                <span class="architecture-flow__connector"></span>
+                <article class="architecture-node architecture-node--recovery">
+                  <span class="architecture-node__index">08</span>
+                  <div>
+                    <span class="architecture-node__label">Metrics Layer</span>
+                    <p>Surfaces operational state without fabricating production data.</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+
+          <div class="architecture-flow__legend" aria-hidden="true">
+            <span><i class="legend__swatch legend__swatch--cyan"></i>Execution emphasis</span>
+            <span><i class="legend__swatch legend__swatch--ice"></i>Recovery and visibility</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="section section--features">
+        <div class="shell">
+          <div class="section-heading section-heading--tight">
+            <span class="eyebrow">Production features</span>
+            <h2>Runtime capabilities shaped for execution, recovery, safety, and observability.</h2>
+            <p>
+              These feature blocks describe the operational surface of DMTI as a production-ready runtime: stateful
+              execution, replayability, controlled dispatch, and layered protection around failure modes.
+            </p>
+          </div>
+
+          <div class="features-grid" role="list" aria-label="Production features">
+            <article class="feature-card card-surface" role="listitem">
+              <div class="feature-card__head">
+                <span class="feature-card__index">01</span>
+                <div class="feature-card__tags" aria-label="Capability tags">
+                  <span class="feature-tag feature-tag--execution">Execution</span>
+                  <span class="feature-tag feature-tag--observability">Observability</span>
+                </div>
+              </div>
+              <h3>Transaction State Machine</h3>
+              <p>Coordinates transaction transitions with explicit control over state, boundaries, and processing order.</p>
+            </article>
+
+            <article class="feature-card card-surface" role="listitem">
+              <div class="feature-card__head">
+                <span class="feature-card__index">02</span>
+                <div class="feature-card__tags" aria-label="Capability tags">
+                  <span class="feature-tag feature-tag--recovery">Recovery</span>
+                  <span class="feature-tag feature-tag--execution">Execution</span>
+                </div>
+              </div>
+              <h3>Replay Engine</h3>
+              <p>Rebuilds deterministic sequences from stored intent so interrupted flows can be restored safely.</p>
+            </article>
+
+            <article class="feature-card card-surface" role="listitem">
+              <div class="feature-card__head">
+                <span class="feature-card__index">03</span>
+                <div class="feature-card__tags" aria-label="Capability tags">
+                  <span class="feature-tag feature-tag--observability">Observability</span>
+                  <span class="feature-tag feature-tag--safety">Safety</span>
+                </div>
+              </div>
+              <h3>Trace Propagation System</h3>
+              <p>Maintains trace context through the pipeline so execution can be reviewed across the full path.</p>
+            </article>
+
+            <article class="feature-card card-surface" role="listitem">
+              <div class="feature-card__head">
+                <span class="feature-card__index">04</span>
+                <div class="feature-card__tags" aria-label="Capability tags">
+                  <span class="feature-tag feature-tag--execution">Execution</span>
+                  <span class="feature-tag feature-tag--safety">Safety</span>
+                </div>
+              </div>
+              <h3>Distributed Scheduler</h3>
+              <p>Orchestrates work across execution surfaces while keeping scheduling decisions controlled and explicit.</p>
+            </article>
+
+            <article class="feature-card card-surface" role="listitem">
+              <div class="feature-card__head">
+                <span class="feature-card__index">05</span>
+                <div class="feature-card__tags" aria-label="Capability tags">
+                  <span class="feature-tag feature-tag--safety">Safety</span>
+                  <span class="feature-tag feature-tag--observability">Observability</span>
+                </div>
+              </div>
+              <h3>Circuit Breaker Layer</h3>
+              <p>Limits propagation during fault conditions and preserves system integrity when external paths degrade.</p>
+            </article>
+
+            <article class="feature-card card-surface" role="listitem">
+              <div class="feature-card__head">
+                <span class="feature-card__index">06</span>
+                <div class="feature-card__tags" aria-label="Capability tags">
+                  <span class="feature-tag feature-tag--recovery">Recovery</span>
+                  <span class="feature-tag feature-tag--execution">Execution</span>
+                </div>
+              </div>
+              <h3>Recovery Workers</h3>
+              <p>Restores continuity after interruptions with controlled re-entry into the runtime and persisted state.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="status" class="section section--status">
+        <div class="shell">
+          <div class="section-heading section-heading--tight">
+            <span class="eyebrow">System status</span>
+            <h2>Runtime integrity snapshot for the current DMTI control surface.</h2>
+            <p>
+              This panel summarizes the system state as a static snapshot. It is intentionally compact, visual, and
+              softer than the production features layer above it.
+            </p>
+          </div>
+
+          <div class="status-grid" role="list" aria-label="System status snapshot">
+            <article class="status-card card-surface" role="listitem">
+              <span class="status-card__dot status-card__dot--complete" aria-hidden="true"></span>
+              <div>
+                <span class="status-card__label">Architecture</span>
+                <strong>COMPLETE</strong>
+              </div>
+            </article>
+
+            <article class="status-card card-surface" role="listitem">
+              <span class="status-card__dot status-card__dot--stable" aria-hidden="true"></span>
+              <div>
+                <span class="status-card__label">Runtime</span>
+                <strong>STABLE</strong>
+              </div>
+            </article>
+
+            <article class="status-card card-surface" role="listitem">
+              <span class="status-card__dot status-card__dot--connected" aria-hidden="true"></span>
+              <div>
+                <span class="status-card__label">Database</span>
+                <strong>CONNECTED</strong>
+              </div>
+            </article>
+
+            <article class="status-card card-surface" role="listitem">
+              <span class="status-card__dot status-card__dot--verified" aria-hidden="true"></span>
+              <div>
+                <span class="status-card__label">Telegram Router</span>
+                <strong>VERIFIED</strong>
+              </div>
+            </article>
+
+            <article class="status-card card-surface" role="listitem">
+              <span class="status-card__dot status-card__dot--active" aria-hidden="true"></span>
+              <div>
+                <span class="status-card__label">Observability</span>
+                <strong>ACTIVE</strong>
+              </div>
+            </article>
+
+            <article class="status-card card-surface" role="listitem">
+              <span class="status-card__dot status-card__dot--enabled" aria-hidden="true"></span>
+              <div>
+                <span class="status-card__label">Recovery Layer</span>
+                <strong>ENABLED</strong>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="roadmap" class="section section--roadmap">
+        <div class="shell">
+          <div class="section-heading section-heading--tight">
+            <span class="eyebrow">System roadmap</span>
+            <h2>DMTI evolution lifecycle from foundation to operator platform.</h2>
+            <p>
+              The roadmap shows how the system matures over time: first the structure, then the runtime, then
+              recovery and execution depth, and finally the operator-facing platform layer.
+            </p>
+          </div>
+
+          <div class="roadmap-timeline" aria-label="DMTI evolution lifecycle">
+            <article class="roadmap-step roadmap-step--left">
+              <div class="roadmap-step__card card-surface">
+                <span class="roadmap-step__phase">Phase 01</span>
+                <h3>Foundation</h3>
+                <p>Establish the base architecture, boundaries, and structural conventions that support the rest of the runtime.</p>
+              </div>
+              <div class="roadmap-step__rail" aria-hidden="true">
+                <span class="roadmap-step__marker"></span>
+              </div>
+            </article>
+
+            <article class="roadmap-step roadmap-step--right">
+              <div class="roadmap-step__rail" aria-hidden="true">
+                <span class="roadmap-step__marker"></span>
+              </div>
+              <div class="roadmap-step__card card-surface">
+                <span class="roadmap-step__phase">Phase 02</span>
+                <h3>Runtime Engine</h3>
+                <p>Introduce the core execution path that handles transactions, control flow, and runtime coordination.</p>
+              </div>
+            </article>
+
+            <article class="roadmap-step roadmap-step--left">
+              <div class="roadmap-step__card card-surface">
+                <span class="roadmap-step__phase">Phase 03</span>
+                <h3>Recovery Layer</h3>
+                <p>Add durability, replay, and restoration mechanics so the system can recover from interruption with discipline.</p>
+              </div>
+              <div class="roadmap-step__rail" aria-hidden="true">
+                <span class="roadmap-step__marker"></span>
+              </div>
+            </article>
+
+            <article class="roadmap-step roadmap-step--right">
+              <div class="roadmap-step__rail" aria-hidden="true">
+                <span class="roadmap-step__marker"></span>
+              </div>
+              <div class="roadmap-step__card card-surface">
+                <span class="roadmap-step__phase">Phase 04</span>
+                <h3>Execution Engine</h3>
+                <p>Expand the runtime into a controlled execution surface with routing, state progression, and operational safeguards.</p>
+              </div>
+            </article>
+
+            <article class="roadmap-step roadmap-step--left">
+              <div class="roadmap-step__card card-surface">
+                <span class="roadmap-step__phase">Phase 05</span>
+                <h3>Operator Platform</h3>
+                <p>Surface the system for day-to-day oversight with clearer visibility, coordination, and operational control.</p>
+              </div>
+              <div class="roadmap-step__rail" aria-hidden="true">
+                <span class="roadmap-step__marker"></span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="trust" class="section section--trust">
+        <div class="shell">
+          <div class="section-heading section-heading--tight">
+            <span class="eyebrow">Trust metrics</span>
+            <h2>Compact indicators that communicate architecture confidence at a glance.</h2>
+          </div>
+
+          <div class="trust-strip card-surface">
+            <div class="trust-metric">
+              <span class="trust-metric__value">5</span>
+              <span class="trust-metric__label">layers in the architecture</span>
+            </div>
+            <div class="trust-metric">
+              <span class="trust-metric__value">4</span>
+              <span class="trust-metric__label">explicit engineering principles</span>
+            </div>
+            <div class="trust-metric">
+              <span class="trust-metric__value">1</span>
+              <span class="trust-metric__label">system objective: reliability</span>
+            </div>
+            <div class="trust-metric">
+              <span class="trust-metric__value">In progress</span>
+              <span class="trust-metric__label">system certification status</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="shell site-footer__grid">
+        <div class="site-footer__brand">
+          <span class="site-footer__eyebrow">DMTI</span>
+          <h2>Distributed Merchant Trading Infrastructure</h2>
+          <p>
+            A system-first portfolio built to present architecture, execution, recovery, and operational control as
+            one coherent DMTI identity.
+          </p>
+        </div>
+
+        <div class="site-footer__links">
+          <div class="site-footer__group">
+            <span class="site-footer__group-label">Documentation</span>
+            <a href="#architecture">Architecture</a>
+            <a href="#principles">Principles</a>
+            <a href="#roadmap">Roadmap</a>
+          </div>
+          <div class="site-footer__group">
+            <span class="site-footer__group-label">Developer</span>
+            <a href="#dashboard">Dashboard</a>
+            <a href="#features">Features</a>
+            <a href="#status">Status</a>
+          </div>
+          <div class="site-footer__group">
+            <span class="site-footer__group-label">System</span>
+            <a href="#hero">Hero</a>
+            <a href="#trust">Trust</a>
+            <a href="#hero">Top</a>
+          </div>
+        </div>
+
+        <div class="site-footer__tags">
+          <span class="site-footer__group-label">Architecture tags</span>
+          <div class="site-footer__tag-row" aria-label="Architecture tags">
+            <span class="footer-tag">Modular</span>
+            <span class="footer-tag">Event-driven</span>
+            <span class="footer-tag">Recoverable</span>
+            <span class="footer-tag">Observable</span>
+            <span class="footer-tag">Execution-first</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
