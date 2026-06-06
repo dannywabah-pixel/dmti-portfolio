@@ -17,8 +17,18 @@
           <span class="brand__text">D-Merchant Trading Infrastructure</span>
         </a>
 
-        <nav class="nav" aria-label="Primary">
+        <button class="topbar__toggle" type="button" aria-controls="primary-nav" aria-expanded="false">
+          <span class="topbar__toggle-lines" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+          <span class="topbar__toggle-label">Menu</span>
+        </button>
+
+        <nav class="nav topbar__nav" id="primary-nav" aria-label="Primary">
           <a href="#hero">Hero</a>
+          <a href="#why">Why DMTI</a>
           <a href="#dashboard">Dashboard</a>
           <a href="#architecture">Architecture</a>
           <a href="#features">Features</a>
@@ -180,6 +190,88 @@
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="why" class="section section--why">
+        <div class="shell">
+          <div class="section-heading section-heading--tight">
+            <span class="eyebrow">Why DMTI exists</span>
+            <h2>Built for survivable execution, not decorative surface area.</h2>
+            <p>
+              DMTI exists to keep trading infrastructure understandable under stress. The architecture is designed to
+              stay modular, replayable, traceable, and deterministic so operators can reason about behavior after a
+              failure, not only while the system is healthy.
+            </p>
+          </div>
+
+          <div class="why-grid">
+            <article class="why-card card-surface">
+              <span class="why-card__label">Problem</span>
+              <h3>Operational ambiguity under load</h3>
+              <p>
+                Trading systems fail quietly when execution paths, message routing, and recovery logic drift apart.
+                DMTI focuses on making those boundaries explicit.
+              </p>
+            </article>
+            <article class="why-card card-surface">
+              <span class="why-card__label">Approach</span>
+              <h3>Modular control surfaces</h3>
+              <p>
+                Each layer is isolated so the runtime can evolve without collapsing the whole surface into a single
+                coupled path.
+              </p>
+            </article>
+            <article class="why-card card-surface">
+              <span class="why-card__label">Survivability</span>
+              <h3>Replay and recovery first</h3>
+              <p>
+                Durable write paths, recovery workers, and trace continuity are treated as core product behavior, not
+                emergency fixes.
+              </p>
+            </article>
+            <article class="why-card card-surface">
+              <span class="why-card__label">Determinism</span>
+              <h3>Reasonable state after failure</h3>
+              <p>
+                The system is built to re-enter known state with confidence, preserving traceability and execution
+                integrity across restarts.
+              </p>
+            </article>
+          </div>
+
+          <div class="doc-hub card-surface">
+            <div class="doc-hub__head">
+              <div>
+                <span class="eyebrow">Documentation hub</span>
+                <h3>Technical discoverability</h3>
+              </div>
+              <p>Quick entry points for architecture, runtime, certification, and lifecycle context.</p>
+            </div>
+
+            <div class="doc-hub__grid">
+              <a class="doc-card" href="#architecture">
+                <span class="doc-card__label">Architecture Overview</span>
+                <strong>Execution flow and system boundaries</strong>
+                <p>Trace the control path from ingress through recovery and operational visibility.</p>
+              </a>
+              <a class="doc-card" href="#status">
+                <span class="doc-card__label">Runtime Status</span>
+                <strong>Snapshot state of the portfolio</strong>
+                <p>Review the current integrity posture without reading through the full page.</p>
+              </a>
+              <a class="doc-card" href="docs/CERTIFICATION.md">
+                <span class="doc-card__label">Certification</span>
+                <strong>Evidence and validation notes</strong>
+                <p>Open the certification material for trust and system review context.</p>
+              </a>
+              <a class="doc-card" href="#roadmap">
+                <span class="doc-card__label">Roadmap</span>
+                <strong>Lifecycle and evolution path</strong>
+                <p>See how the system progresses from foundation to operator platform.</p>
+              </a>
             </div>
           </div>
         </div>
@@ -718,6 +810,11 @@
             A system-first portfolio built to present architecture, execution, recovery, and operational control as
             one coherent DMTI identity.
           </p>
+          <div class="site-footer__version" aria-label="Portfolio version">
+            <span class="site-footer__group-label">Portfolio version</span>
+            <strong>v1.0.0</strong>
+            <span>Institutional portfolio release</span>
+          </div>
         </div>
 
         <div class="site-footer__links">
@@ -736,6 +833,7 @@
           <div class="site-footer__group">
             <span class="site-footer__group-label">System</span>
             <a href="#hero">Hero</a>
+            <a href="#why">Why DMTI</a>
             <a href="#trust">Trust</a>
             <a href="#hero">Top</a>
           </div>
@@ -753,5 +851,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/app.js"></script>
   </body>
 </html>
